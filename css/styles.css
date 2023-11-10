@@ -32,7 +32,9 @@
     --color-brand-light: #819B57;
     --color-brand-dark: #465929;
 }
+
 /* Base styl*/
+
 * {
     box-sizing: border-box;
 }
@@ -55,6 +57,8 @@ address {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -100,10 +104,36 @@ ul {
     color: Var(--color-primary-light);
     text-decoration: none;
 }
+
 .link:hover {
     color: Var(--color-brand-light);
-    font-weight: 600;
 }
+
+/*Header*/
+.header {
+    background-color: #465929;
+}
+
+.header-conteyner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 /*Hero- section*/
 
 .hero-section {
@@ -122,13 +152,22 @@ ul {
 .hero-tiyle .accent {
     color: Var(--color-brand-light);
 }
+/*Advantages_section*/
 
-.advantageb-list {
-    color: Var(--color-primary-light);
+.advantages-section {
+    padding: 16px 0;
     background-color: Var(--color-brand-light);
 }
 
+.advantageb-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
 .advantageb-item {
+    color: Var(--color-primary-light);
     font-size: 20px;
     font-weight: 300;
 }
@@ -143,10 +182,20 @@ ul {
     color: var(--color-brand-dark);
 }
 
-/*traditions-section*/
+/*Traditions-section*/
 
 .traditions-section {
     padding-top: 96px;
+}
+
+.traditions-conteyner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditios-content {
+    max-width: 710px;
 }
 
 .traditions-title {
@@ -154,13 +203,16 @@ ul {
 }
 
 .traditions-text span {
-    color: var(--color-brand-light);
-    
-    
+    color: var(--color-brand-light);  
 }
+
 .traditions-text .uppercase {
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.traditions-text.limited {
+    max-width: 340px;
 }
 
 .chev-title {
@@ -171,6 +223,23 @@ ul {
 
 .chevs-title {
     margin-bottom: 80;
+}
+
+/*Format secnion*/
+
+.fopmats-list {
+    display: flex;
+    gap: 20px;
+}
+
+.format-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+    border: 1px solid lightgray; /*Remove*/
+    border-radius: 16px;
+    padding: 24px;
 }
 
 .formats-title {
@@ -186,7 +255,9 @@ ul {
     font-size: 14px;
     font-weight: 300;
 }
+
 /*Contact*/
+
 .contact-title {
     margin-bottom: 16px;
 }
@@ -197,6 +268,7 @@ ul {
     font-weight: 300;
     text-decoration: none;
 }
+
 .address-link:hover {
     color: var(--color-brand-light);
 }
