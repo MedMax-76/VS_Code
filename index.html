@@ -20,7 +20,7 @@
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
               </li>
-              <li><a class="link" href="#chevs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
               <li><a class="link" href="#formate-section">Формати</a></li>
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
@@ -72,15 +72,20 @@
           </div>
         </div>
       </section>
-      <section class="chevs-title section" id="chevs-section">
+      <section class="section" id="chefs-section">
         <div class="conteyner">
-          <h2 class="section-title">
+          <h2 class="chefs-title section-title center">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
           <ul>
             <li>
               <article>
-                <h3 class="chev-title">Настя</h3>
+                <img
+                  class="chef-image"
+                  src="./Images/nasty.jpg"
+                  alt="Nastya chef"
+                />
+                <h3 class="chef-title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
                 <p>Я випічу для вас найсмачніщі вироби!</p>
@@ -88,7 +93,12 @@
             </li>
             <li>
               <article>
-                <h3 class="chev-title">Влад</h3>
+                <img
+                  class="chef-image"
+                  src="./Images/vlad.jpg"
+                  alt="Vlad chef"
+                />
+                <h3 class="chef-title">Влад</h3>
                 <p>Привіт, я Влад!</p>
                 <p>
                   Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
@@ -102,7 +112,12 @@
       </section>
       <section class="section" id="formate-section">
         <div class="conteyner">
-          <h2 class="formats-title section-title">Формати</h2>
+          <h2 class="formats-title section-title center">Формати</h2>
+          <button class="carusel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./Images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
           <ul class="fopmats-list">
             <li class="format-item">
               <article class="format-card">
@@ -141,6 +156,11 @@
               </article>
             </li>
           </ul>
+          <button class="carusel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./Images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contact-section">
@@ -160,7 +180,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="conteyner">
         <nav>
           <a href="#"></a>
@@ -197,11 +217,15 @@
             </li>
             <li>
               <a href="#"></a>
-              <!--face icon-->
+              <svg class="address-social" width="32" height="32">
+                <use href="./Images/icons.svg#icon-facebook"></use>
+              </svg>
             </li>
             <li>
               <a href="#"></a>
-              <!--insta icon-->
+              <svg class="address-social" width="32" height="32">
+                <use href="./Images/icons.svg#icon-instagram"></use>
+              </svg>
             </li>
           </ul>
           <a class="address-link" href="#" target="_blank"
