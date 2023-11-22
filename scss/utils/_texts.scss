@@ -1,12 +1,15 @@
 .text-brand {
-  color: Var(--color-brand-normal);
+  color: var(--color-brand-normal);
 }
+
 .text-brand-dark {
-  color: Var(--color-brand-dark);
+  color: var(--color-brand-dark);
 }
+
 .text-bold {
   font-weight: 600;
 }
+
 .text-uppercase {
   text-transform: uppercase;
 }

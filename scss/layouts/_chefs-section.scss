@@ -3,7 +3,7 @@
     position: relative;
     margin: 0 auto 24px;
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       margin-bottom: 80px;
     }
 
@@ -15,10 +15,12 @@
       width: 352px;
       border: 2px solid var(--color-brand-light);
       content: '';
-      @media screen and (min-width: $br-desktop) {
+
+      @media screen and (min-width: $bp-desktop) {
         display: block;
       }
     }
+
     &::before {
       left: 0;
     }
@@ -32,16 +34,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       gap: 40px 30px;
     }
   }
 
   &__item {
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       flex-basis: calc((100% - 30px) / 2);
     }
   }
